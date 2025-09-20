@@ -1,5 +1,7 @@
 import axios from "axios";
-import { TOKEN } from "../const";
+// import { TOKEN } from "../const";
+
+const TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzY2NjOTliYTUzZWFiNTUxODlkZGY2MzA5MDA1NzZkZCIsIm5iZiI6MTc1NTUyNTk3MC43Nywic3ViIjoiNjhhMzMzNTIwYTMzMmZkYjA0ZTk0ZmU2Iiwic2NvcGVzIjpbImFwaV9yZWFkIl0sInZlcnNpb24iOjF9.7PQHrXWl6KSZfjpj0nENIMa4dT28ah5Ymn5LYkbbMC4'
 
 // TMDB API
 export const api = axios.create({
