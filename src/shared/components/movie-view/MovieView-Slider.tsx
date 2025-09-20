@@ -1,11 +1,11 @@
 import { memo, useState, type FC } from "react";
-import { IMAGE_URL } from "../../const";
+// import { IMAGE_URL } from "../../const";
 import { useNavigate } from "react-router-dom";
 import defaultImg from "../../../shared/assets/hero/default-img.jpg";
 import Skeleton from "../ui/Skeleton";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
+const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 //@ts-ignore
 import "swiper/css";
 

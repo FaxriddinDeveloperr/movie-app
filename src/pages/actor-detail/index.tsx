@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { IMAGE_URL } from "../../shared/const";
+// import { IMAGE_URL } from "../../shared/const";
 import { useActors } from "./services";
 import { Image } from "antd";
 import SkeletonActorDetail from "../../shared/components/ui/SkeletonActorDetail";
@@ -9,6 +9,7 @@ import MovieViewSlider from "../../shared/components/movie-view/MovieView-Slider
 import Skeleton from "../../shared/components/ui/Skeleton";
 import { useSimilarMovieData } from "../../shared/hooks/getSimilarMovieActors";
 
+const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 export interface IActorDetail {
   id: number;
   biography: string;

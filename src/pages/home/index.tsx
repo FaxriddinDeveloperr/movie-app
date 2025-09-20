@@ -2,8 +2,8 @@ import { memo } from "react";
 import { Play } from "lucide-react";
 import TopWeeks from "../../shared/components/top-weeks/TopWeeks";
 import { useFullMovieData } from "../../shared/hooks/getGenres";
-import { IMAGE_URL } from "../../shared/const";
-
+// import { IMAGE_URL } from "../../shared/const";
+const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 //@ts-ignore
 import "swiper/css";
 

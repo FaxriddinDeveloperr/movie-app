@@ -1,10 +1,10 @@
 import { memo } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { IMAGE_URL } from "../../../../shared/const";
+// import { IMAGE_URL } from "../../../../shared/const";
 import userLogo from "../../../../shared/assets/hero/user-icon.png";
 import { useMovie } from "../../../movie/services/useMovie";
 import SkeletonCastCrew from "../../../../shared/components/ui/SkeletonCastCrew";
-
+const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 const Crew = () => {
   const { id } = useParams();
   const { getMovieItems } = useMovie();

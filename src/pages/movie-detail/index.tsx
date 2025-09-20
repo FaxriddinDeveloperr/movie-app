@@ -1,6 +1,6 @@
 import { memo, useEffect } from "react";
 import { NavLink, Outlet, useParams } from "react-router-dom";
-import { IMAGE_URL } from "../../shared/const";
+// import { IMAGE_URL } from "../../shared/const";
 import Title from "../../shared/components/ui/title";
 import MovieView from "../../shared/components/movie-view/MovieView";
 import { Image } from "antd";
@@ -13,7 +13,7 @@ import { useDispatch, useSelector } from "react-redux";
 import type { RootState } from "../../app/store";
 import { toggleFavorite } from "../../shared/lib/features/favoriteSlice";
 import { toggleLikes } from "../../shared/lib/features/likesSlice";
-
+const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 const MovieDetail = () => {
   const { id } = useParams();
   const { getMovieById, getMovieItems } = useMovie();

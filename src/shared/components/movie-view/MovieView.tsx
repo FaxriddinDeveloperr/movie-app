@@ -1,5 +1,5 @@
 import { memo, useState, type FC } from "react";
-import { IMAGE_URL } from "../../const";
+// import { IMAGE_URL } from "../../const";
 import { useNavigate } from "react-router-dom";
 import defaultImg from "../../../shared/assets/hero/default-img.jpg";
 import Skeleton from "../ui/Skeleton";
@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleFavorite } from "../../lib/features/favoriteSlice";
 import type { RootState } from "../../../app/store";
 import { toggleLikes } from "../../lib/features/likesSlice";
-
+const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 interface Props {
   data: any;
   className?: string;
